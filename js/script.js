@@ -12,4 +12,5 @@ if (passengerAge < 18) {
 }
 // 5. Output
 fare = fare.toFixed(2) + "€";
-document.getElementById('fare').innerHTML += fare;
+// document.getElementById('fare').innerHTML += fare;
+alert("Costo totale del biglietto: " + fare);
