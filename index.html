@@ -4,10 +4,57 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Open-Sans-condensed_Google-font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+        <!-- /Open-Sans-condensed_Google-font -->
+        <link rel="stylesheet" href="css/style.css">
         <title>js-biglietto-treno</title>
     </head>
     <body>
-        <!-- <h1 id="fare">Ticket price: </h1> -->
+        <header>
+            <h1>Train-ticket</h1>
+        </header>
+        <main>
+            <section class="main-info">
+                <ul>
+                    <li class="main-info__item">
+                        <span class="item--position">Da</span> 
+                        <span class="item__user-input" id="from"></span>
+                    </li>
+                    <li class="main-info__item">
+                        <span class="item--position">A</span>
+                        <span class="item__user-input" id="to"></span>
+                    </li>
+                    <li class="main-info__item">
+                        <span class="item--position">Km</span>
+                        <span class="item__user-input" id="km-To-Travel"></span>
+                    </li>
+                </ul>
+                
+            </section>
+            <section class="details">
+                <ul>
+                    <li class="details__item">
+                        <span class="item--position">Nome</span>
+                        <span class="item__user-input" id="passenger-Firstname"></span>
+                    </li>
+                    <li class="details__item">
+                        <span class="item--position">Cognome</span>
+                        <span class="item__user-input" id="passenger-Lastname"></span>
+                    </li>
+                    <li class="details__item">
+                        <span class="item--position">Data di nascita</span>
+                        <span class="item__user-input" id="passenger-Birthday"></span>
+                    </li>
+                    <li class="details__item">
+                        <span class="item--position">Prezzo totale</span>
+                        <span class="item__user-input" id="fare"></span>
+                    </li>
+                </ul>
+            </section>
+        </main>
         <script src="js/script.js"></script>
     </body>
 </html>

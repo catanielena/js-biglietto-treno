@@ -1,0 +1,113 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* common */
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+    background-color: #fff;
+    overflow: hidden;
+    background-color: lightgoldenrodyellow;
+}
+
+ul {
+    list-style: none;
+}
+
+/* typo */
+@font-face {
+    font-family: mister-pixel;
+    src: url(../font/Mister\ Pixel\ Regular.otf);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: mister-pixel-tools;
+    src: url(../font/Mister\ Pixel\ Tools.otf);
+}
+
+h1 {
+    font-size: 6rem;
+    font-weight: 300;
+    font-family: mister-pixel;
+    font-style: italic;
+    padding: 4rem 0 0;
+    display: inline-block;
+    transform:scale(1,3); /* W3C */
+    transition: transform 2s;
+    position: absolute;
+}
+
+h1:hover {
+    transform:scale(15,15); /* W3C */
+}
+/* main */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.main-info, .details {
+    width: 60%;
+}
+.main-info__item, .details__item {
+    font-size: 3rem;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+.item--position {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+
+.item__user-input {
+    color: blue;
+    font-family: mister-pixel;
+    border: 1px solid blue;
+    width: 70%;
+    transition: width 1.5s;
+    display: inline-block;
+    right: 0;
+}
+.item__user-input:hover {
+    width: 100%;
+    background-color: blue;
+    color: #fff;
+    font-family: mister-pixel-tools;
+
+}
+
+@media screen and (max-width: 1400px) {
+    main {
+        padding-top: 21rem;
+    }
+    .main-info, .details {
+        width: 100%;
+    }
+
+    
+}
+
+@media screen and (max-width: 650px) {
+    .main-info__item, .details__item {
+        font-size: 2rem;
+    }
+
+    .item__user-input {
+        color: blue;
+        font-family: mister-pixel;
+        border: 1px solid blue;
+        width: 50%;
+        transition: width 1.5s;
+        display: inline-block;
+    }    
+    
+}
+
